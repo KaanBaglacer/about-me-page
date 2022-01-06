@@ -1,19 +1,27 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
+import {AppShellComponent} from "./app-shell/app-shell.component";
 
 const routes: Routes = [
   {
-    path: 'home-page',
-    loadChildren: () => import('./main/home-page/home-page.module').then(m => m.HomePageModule),
+    path: '', redirectTo: 'app', pathMatch: 'full'
   },
   {
-    path: 'about-me',
-    loadChildren: () => import('./main/about-me/about-me.module').then(m => m.AboutMeModule),
-  },
-  {
-    path: 'about-me',
-    loadChildren: () => import('./main/about-me/about-me-routing.module').then(m => m.AboutMeRoutingModule)
-  },
+    path: 'app',
+    component: AppShellComponent,
+    children: [
+      {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {
+        path: 'home',
+        loadChildren: () => import('./main/home-page/home-page.module').then(m => m.HomePageModule),
+      },
+      {
+        path: 'about-me',
+        loadChildren: () => import('./main/about-me/about-me.module').then(m => m.AboutMeModule),
+      },
+    ]
+  }
+
 ];
 
 @NgModule({

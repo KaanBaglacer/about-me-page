@@ -1,6 +1,8 @@
-export interface ButtonModel {
-  clickStatus: boolean;
-  activeClass: string;
-  passiveClass: string;
-  tabIdx: number;
+export interface TopNavBarButtonModel {
+  clickStatus?: boolean;
+  activeClass?: string;
+  route?: string;
+  passiveClass?: string;
+  label?: string;
+  tabIdx?: number;
 }
