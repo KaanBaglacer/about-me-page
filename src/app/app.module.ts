@@ -8,8 +8,6 @@ import {ButtonComponent} from './shared/button/button.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {MatTabsModule} from "@angular/material/tabs";
-import {HomePageComponent} from './main/home-page/home-page.component';
-import {AboutMeComponent} from './main/about-me/about-me.component';
 import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
@@ -18,8 +16,6 @@ import {AppRoutingModule} from "./app-routing.module";
     AppShellComponent,
     NavbarComponent,
     ButtonComponent,
-    HomePageComponent,
-    AboutMeComponent
   ],
   imports: [
     AppRoutingModule,
