@@ -51,12 +51,12 @@ body {
 }
 
 .ab-me-navbar {
-  background-color: rgb(99 102 241);
-  height: 50px;
+  background-color: rgb(29, 29, 31);
+  height: 60px;
   display: flex;
   justify-content: center;
-  border-bottom: black 1.7px solid;
-  padding: 2px 0 0;
+  //border-bottom: black 1.7px solid;
+  padding: 10px 0 0;
 }
 
 .ab-tab-button {
@@ -68,25 +68,19 @@ body {
 .ab-tab-button-active {
 
   @extend .ab-tab-button;
-
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(87, 86, 86, 0.25);
   border-top: transparent 1.5px solid;
   border-left: transparent 1.5px solid;
   border-right: transparent 1.5px solid;
-  border-bottom: rgb(99 102 241) 1.7px solid;
-  transform: translate(0px, 1.7px);
+  //border-bottom: rgb(99 102 241) 1.7px solid;
+  //border-bottom: rgb(29, 29, 31) 1.7px solid;
+  //transform: translate(0px, 1.7px);
   border-radius: 10px 10px 0 0;
 }
 
 .ab-me-button {
   @apply px-4 py-2 font-semibold text-sm bg-sky-500;
   @apply text-white rounded-full shadow-sm;
-}
-
-.hamburger-button {
-  background-color: black;
-  height: 35px;
-  width: 55px;
 }
 
 .mat-tab-label-content {
