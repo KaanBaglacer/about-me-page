@@ -1,0 +1,40 @@
+.about-me-body {
+  background-color: #2c2c2d;
+  @apply text-white;
+}
+
+.home-page-picture-and-paragraph {
+  @apply grid grid-cols-12 gap-4 place-items-center;
+}
+
+.home-page-picture {
+  @apply col-end-11 col-span-3;
+}
+
+.home-page-paragraph {
+  @apply col-start-3 col-span-4;
+}
+
+.profile-image {
+  width: 450px;
+  background-image: linear-gradient(to right, rgba(44, 44, 45, 0), rgba(44, 44, 45, 1));
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1100px) {
+  .about-me-body {
+    height: fit-content !important;
+  }
+  .home-page-picture {
+    @apply col-span-12 ;
+  }
+
+  .home-page-paragraph {
+    @apply col-start-2 col-span-10 ;
+    padding: 45px 45px;
+  }
+
+  .profile-image {
+    width: 350px;
+  }
+}
